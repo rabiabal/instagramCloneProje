@@ -1,0 +1,28 @@
+name: myapp
+description: "A new Flutter project."
+publish_to: 'none' # Eğer özel bir paketse
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  instagram_clone_flutter: ^0.0.1 # Pub.dev'den almak istersen, ya da yerel paket için path ekleyebilirsin
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  # assets:   # Bu satır kaldırıldı, çünkü artık yerel resimlere ihtiyacımız yok
+  #   - assets/images/  # Bu satır kaldırıldı
+  fonts:
+    - family: MyCustomFont
+      fonts:
+        - asset: fonts/MyCustomFont-Regular.ttf
